@@ -27,9 +27,10 @@
         .a {
             text-align: center;
             margin-top: 30px;
+            margin-bottom: 50px;
         }
 
-        .a>a {
+        .a>.a {
             background-color: rgb(244, 108, 10);
             padding: 20px;
             text-decoration: none;
@@ -38,6 +39,15 @@
             box-shadow: 10px 10px 5px rgb(145, 146, 146);
             border-style: solid;
         }
+
+        .a>.b {
+            background-color: rgb(114, 110, 170);
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: rgb(254, 251, 251);
+            border-style: solid;
+        } 
 
         .img {
             display: block;
@@ -68,6 +78,15 @@
 
         li {
             font-size: 27px;
+        }
+
+        .Edi {
+            border-radius: 47%;
+            height: 270px;
+            width: 240px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         h1,
@@ -105,7 +124,7 @@
     <h3>COMPRE AGORA CLICANDO NO BOTÃO ABAIXO</h3>
 
     <div class="a">
-        <a href="#">COMPRAR</a>
+        <a class="a" href="#">COMPRAR</a>
     </div>
 
     <hr>
@@ -123,11 +142,23 @@
             aprender mais sobre esse Deus maravilhoso, vai ter assunto para pregação e se você é de gravar video aqui
             também tem assunto para você também! baseado nesse estudo biblico.</b>
     </p>
-
+    <h2>Quem criou esse estudo?</h2>
+    <div class="prEdi">
+        <img class="Edi" src="WhatsApp Image 2024-05-08 at 11.19.34.jpeg" alt="Pr. Ediomar Oliveira">
+        <h3>Pastor Ediomar Oliveira</h3>
+        <p><b>Conheça um pouco sobre o Pr. Edi</b></p>
+        <div class="a">
+            <a class="b" href="@">Instagram</a><br>
+            
+        </div>
+        <div class="a"><a class="b" href="#">Site da igreja</a></div>
+    </div>
     <footer class="w3-center w3-light-grey w3-padding-32">
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
                 class="w3-hover-text-green">w3.css</a></p>
     </footer>
+
+
 
 </body>
 
