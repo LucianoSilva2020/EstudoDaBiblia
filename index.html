@@ -22,6 +22,22 @@
             background-color: rgba(150, 173, 173, 0.226);
         }
 
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translatey(0)
+            }
+
+            50% {
+                transform: translatey(-7px)
+            }
+        }
+
+        #efeito-flutuante-infinito {
+            animation: float 1.5s ease-in-out infinite;
+        }
+
         hr {
             height: 3px;
             background-color: rgb(15, 39, 7);
@@ -32,6 +48,7 @@
             text-align: center;
             margin-top: 30px;
             margin-bottom: 50px;
+            font-family: Verdana, sans-serif;
         }
 
         .a>.a {
@@ -41,9 +58,9 @@
             border-radius: 30px;
             color: rgb(254, 251, 251);
             box-shadow: 7px 7px 7px rgba(100, 102, 102, 0.356);
-            border-style: solid;
             padding-left: 60px;
             padding-right: 60px;
+            font-family: Verdana, sans-serif;
         }
 
         .a>.b {
@@ -53,7 +70,7 @@
             border-radius: 30px;
             color: rgb(254, 251, 251);
             border-style: solid;
-        } 
+        }
 
         .img {
             display: block;
@@ -96,12 +113,17 @@
             margin-right: auto;
         }
 
+        #b {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
         h1,
         h2,
         h3,
         h4,
         h6 {
-            font-family: 'Goldman', sans-serif;
+            font-family: Verdana, sans-serif;
             letter-spacing: 5px;
             text-align: center;
             margin: 40px;
@@ -130,7 +152,7 @@
 
     <h3>COMPRE AGORA CLICANDO NO BOTÃO ABAIXO</h3>
 
-    <div class="a">
+    <div id="efeito-flutuante-infinito" class="a">
         <a class="a" href="#">COMPRAR</a>
     </div>
 
@@ -156,8 +178,8 @@
         <h3>Pastor Ediomar Oliveira</h3>
         <p><b>Conheça um pouco sobre o Pr. Edi</b></p>
         <div class="a">
-            <a class="b" href="https://www.instagram.com/pr.edioliveira/">Instagram</a><br>
-            
+            <a id="b" class="b" href="https://www.instagram.com/pr.edioliveira/">Instagram</a>
+
         </div>
         <div class="a"><a class="b" href="https://igrejabatistatempodecantar.netlify.app/">Site da igreja</a></div>
     </div>
